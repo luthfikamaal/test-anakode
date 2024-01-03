@@ -42,11 +42,13 @@ export default async function Province({ params }) {
 
   return (
     <div className="p-3">
-      {province}
+      <h1 className="text-2xl mb-4">{province}</h1>
       <ul>
         {cities.map((city) => (
-          <li key={city.city_id}>
-            {city.type} {city.city_name}
+          <li key={city.city_id} className="mb-3">
+            <div className="list">
+              {city.type} {city.city_name}
+            </div>
           </li>
         ))}
       </ul>

@@ -18,8 +18,10 @@ export default async function Provinces() {
     <ul className="p-3">
       {/* {provinces} */}
       {provinces.map(({ province_id, province }) => (
-        <li key={province_id}>
-          <Link href={`/provinces/${province_id}`}>{province}</Link>
+        <li key={province_id} className="mb-3">
+          <Link href={`/provinces/${province_id}`}>
+            <div class="list">{province}</div>
+          </Link>
         </li>
       ))}
     </ul>
